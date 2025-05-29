@@ -53,14 +53,14 @@ def main():
 
         # Проверка на выход
         if user_input.lower() in ('q', 'exit', 'quit'):
-            print("Выход из программы...")
+            print("Вы вышли. Но зачем? Вы же только начали побеждать!")
             break
 
         # Обработка ввода
         if user_input.startswith('http'):
             word_id = extract_word_id(user_input)
             if not word_id:
-                print("Ошибка: неверный URL или word_id не найден")
+                print("Ошибка: ну и че ты мне скинул?")
                 continue
         else:
             word_id = user_input
